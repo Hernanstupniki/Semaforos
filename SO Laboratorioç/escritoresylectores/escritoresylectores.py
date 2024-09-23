@@ -57,7 +57,7 @@ def escritor(id_escritor):
         # Una vez que termina la escritura, se actualiza la versión estable
         recurso_estable = nuevo_recurso
         valor = nuevo_valor
-        print(f"Escritor {id_escritor} terminó de escribir. Nuevo recurso estable: [{recurso_estable}]")
+        print(f"Escritor {id_escritor} terminó de escribir. Nuevo recurso estable: {valor}")
 
         # Liberar el semáforo para permitir a los lectores continuar
         lectores_mutex.release()
